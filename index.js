@@ -20,6 +20,6 @@ app.get("*",(req,res)=>{
 
 
 let porta=process.env.PORT||3000; 
-app.listen(3000,(e)=>{
+app.listen(porta,(e)=>{
 e? console.log("Errore nell'avvio server"):console.log(`Server Avviato alla porta ${porta}`)
 });
