@@ -1,32 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: linear-gradient(left, black, gold);
+  background: -webkit-linear-gradient(left,black 0%,gold 100%); /* Chrome10+,Safari5.1+ */
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient( black, gold);
-    }
+canvas {
+  position: absolute;
+}
 
-    canvas {
-      position: absolute;
-          }
+.contenitore {
+ 
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-          
+h1 {
+  color: gold;
+  text-shadow: 2px 1px white;
+  text-align: center;
+}
 
-    .contenitore{
-        display:flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-  }
-  h1{
-    color: gold;
-    text-shadow: 2px 1px white;
-    text-align: center;
-  }
-  h2{
-    color:white;
-  }
+h2 {
+  text-align: center;
+  color: white;
+}
+
+video{
+  width: 50%;
+  height:50%;
+}
