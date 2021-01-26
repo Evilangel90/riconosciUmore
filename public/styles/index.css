@@ -1,0 +1,32 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient( black, gold);
+    }
+
+    canvas {
+      position: absolute;
+          }
+
+          
+
+    .contenitore{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+  }
+  h1{
+    color: gold;
+    text-shadow: 2px 1px white;
+    text-align: center;
+  }
+  h2{
+    color:white;
+  }
