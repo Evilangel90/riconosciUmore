@@ -3,7 +3,7 @@ const contenitore = document.querySelector(".contenitore");
 const span=document.querySelector("#umore");
 
 function iniziaVideo() {
-  navigator.getUserMedia(
+  navigator.mediaDevices.getUserMedia(
     { video: {} },
     stream => video.srcObject = stream,
     err => console.error(err)
