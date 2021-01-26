@@ -8,11 +8,13 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.engine("html", ejsMate);
 
-app.use(express.static(path.join(__dirname, "public")));
-
-
+app.use(express.static(path.join(__dirname, "public")))
 app.get("/api/riconoscimentoUmore",(req,res)=>{
     res.render("index.html");
+})   
+
+app.get("*",(req,res)=>{
+    res.redirect("/api/riconoscimentoUmore");
 })   
 
 
